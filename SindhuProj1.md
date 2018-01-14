@@ -32,3 +32,47 @@ Step1: Configure a key pair
 Go to EC2 Dashboard.Navigate Key Pairs Pane on EC2 Dashboard.
 Create a new key pair if you dont have an existing key.
 Choose Import to create a new key pair.Provide a name to the key pair.Copy the generated public key of SSH to the Public key contents.
+![key-pair-ubuntu](https://user-images.githubusercontent.com/35319815/34913251-0b603fd4-f8c6-11e7-9019-69cdff6ea9ef.JPG)
+
+Step2: Create a New Security group
+a.Go to EC2 Dashboard.Navigate to Security Group Pane then click on Create Security Group.
+b.Provide following details,
+  Security Group Name : Example Jupyter_docker
+  Description : "Open access to Jupyter and docker default ports"
+  VPC : Select default VPC. 
+c.Configure Security Group rules for Inbound,
+ SSH
+ HTTP
+ HTTPS
+ Custom TCP Rule
+ Custom TCP Rule
+
+Create a New EC2 Instance Type,
+Go to EC2 Dashboard and click on Launch Instance Button.
+All the necessary configurations are made as part of launching new instance.
+First tab : Choose AMI
+Second tab : "Choose Instance Type"
+Third tab : "Configure Instance", Safely Ignored
+Fourth tab : "Add Storage"
+Fifth tab : "Add Tags", Safely Ignored.
+Sixth tab : "Configure Security Group", is a Critical configuration. Choose "Select an existing security group" since this was already created in earlier and select the group. Verify all the configurations are correct.
+Last step, Click "Review and Launch" button. 
+Then,"Select an existing key pair or create a new key pair" will prompted. Here select key-pair created earlier and accept the acknowlegdement then launch the instance.
+Makesure instance is running by navigating to EC2 Dashboard Instances Pane.
+
+Configure the New EC2 Instance for Using Docker,
+a.SSH into EC2 Instance
+
+b.Install Docker Via a Shell Script
+
+c.Add the ubuntu user to docker group
+
+d.Restart Docker Daemon
+
+e.Check the Docker Version by loging into Remote System.
+
+
+
+
+
+
