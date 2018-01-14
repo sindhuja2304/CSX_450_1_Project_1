@@ -21,3 +21,14 @@ This process will generate a id_rsa(private key) and id_rsa.pub(public key),a ke
 Using below command we can verify the contents of the generated public key.
 $cat ~/.ssh/id_rsa.pub
 Generated output is as below
+
+![publickey](https://user-images.githubusercontent.com/35319815/34912729-8d1a2342-f8b6-11e7-9af0-5055d72705bd.JPG)
+
+AWS Operating System Installation Steps:
+AWS is the cloud-based service providing platform.Amazon EC2(Elastic Compute Cloud) is a web service which provides secure and capacity in cloud.Users can try the AWS free tier which includes 750 hours of free usage on their T2.microplatform.
+
+The process of configuring an AWS EC2 system consists of below steps
+Step1: Configure a key pair
+Go to EC2 Dashboard.Navigate Key Pairs Pane on EC2 Dashboard.
+Create a new key pair if you dont have an existing key.
+Choose Import to create a new key pair.Provide a name to the key pair.Copy the generated public key of SSH to the Public key contents.
