@@ -48,6 +48,7 @@ Then, "Select an existing key pair or create a new key pair" will prompted. Here
 
 You will be notified of the running instance. Make sure instance is running by navigating to EC2 Dashboard Instances Pane. Make a note of the IP address of the instance at the bottom of tab.
 
+
 Docker Installation
 
 1.We can configure the New EC2 Instance for Using Docker.
