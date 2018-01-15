@@ -32,18 +32,26 @@ Go to EC2 Dashboard and click on Launch Instance Button.
 All the necessary configurations are made as part of launching new instance.
 1. In the First tab "choose AMI"(Amazon Machine Image).Choose the Ubuntu server that is free tier eligible.
 2. In the Second tab "Choose Instance Type"
+![chooseinstance](https://user-images.githubusercontent.com/35319815/34926847-350547f2-f980-11e7-9fe8-6d206d3ff577.JPG)
+
 3. In the third tab you can "Configure Instance".This step can be ignored
+
+![configuresecuritygroup](https://user-images.githubusercontent.com/35319815/34926867-5393e67e-f980-11e7-9e0a-ba796c348d30.JPG)
+
 4. In the fourth tab you can "Add Storage".Storage can be added upto 30 gb for free version.
 5. In the fifth tab you can "Add tags".This step can be ignored.
 6. In the sixth tab "Configure Security Group", is a Critical configuration. Choose the existing security group created to the instance that you are configuring. Verify that necessary ports are available in the Inbound rules at the bottom of tab.
 Users might receive a warning from AWS saying “Improve your instances’ security. The security group created is now open to the world
 Last step, Click "Review and Launch" button. 
 Then, "Select an existing key pair or create a new key pair" will prompted. Here select key-pair created earlier and accept the acknowledgement then launch the instance.
+![launchinstance](https://user-images.githubusercontent.com/35319815/34926874-5f28952a-f980-11e7-9e35-6992282f21d8.JPG)
+
 You will be notified of the running instance. Make sure instance is running by navigating to EC2 Dashboard Instances Pane. Make a note of the IP address of the instance at the bottom of tab.
 
 Docker Installation
 1.We can configure the New EC2 Instance for Using Docker.
    $ ssh ubuntu@ 35.167.20.17
+   
 
 2.Docker can be installed via shell script obtained from get.docker.com and passed via pipe (|) to a shell(sh).
    ubuntu@ip-172-31-29-202:~$ curl -sSL https://get.docker.com/ | sh
