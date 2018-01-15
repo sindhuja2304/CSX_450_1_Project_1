@@ -119,6 +119,7 @@ The output from the running Jupyter Notebook server provides you with a security
 ![jupytertoken](https://user-images.githubusercontent.com/35319815/34927818-114f5f44-f987-11e7-872d-c91304403c7c.JPG)
 
 **A detailed budget of the costs of running a Jupyter Data Science Notebook Server for three months using at least three different kinds of EC 2 instances is as below**
+
 General Purpose - Current Generation
 t2.large
 2 vCPU,Variable ECU,8 Memory(GiB)
