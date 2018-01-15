@@ -53,6 +53,7 @@ All the necessary configurations are made as part of launching new instance.
 
 ![configuresecuritygroup](https://user-images.githubusercontent.com/35319815/34926867-5393e67e-f980-11e7-9e0a-ba796c348d30.JPG)
 Users might receive a warning from AWS saying “Improve your instances’ security. The security group created is now open to the world.
+
 7.In the last tab Click "Review and Launch" button. 
 Then, "Select an existing key pair or create a new key pair" will be prompted.Select the existing key-pair  and accept the acknowledgement and then launch the instance.
 
