@@ -31,7 +31,10 @@ Choose Import to create a new key pair. Provide a name to the key pair. Copy the
 Go to EC2 Dashboard and click on Launch Instance Button.
 All the necessary configurations are made as part of launching new instance.
 1. In the First tab "choose AMI"(Amazon Machine Image).Choose the Ubuntu server that is free tier eligible.
+
+![ami](https://user-images.githubusercontent.com/35319815/34927077-975cd13a-f981-11e7-914f-85cdd06359a4.JPG)
 2. In the Second tab "Choose Instance Type"
+
 ![chooseinstance](https://user-images.githubusercontent.com/35319815/34926847-350547f2-f980-11e7-9fe8-6d206d3ff577.JPG)
 
 3. In the third tab you can "Configure Instance".This step can be ignored
@@ -49,6 +52,16 @@ Then, "Select an existing key pair or create a new key pair" will prompted. Here
 You will be notified of the running instance. Make sure instance is running by navigating to EC2 Dashboard Instances Pane. Make a note of the IP address of the instance at the bottom of tab.
 
 
+
+
+
+
+
+
+
+
+
+
 Docker Installation
 
 1.We can configure the New EC2 Instance for Using Docker.
@@ -60,6 +73,9 @@ Docker Installation
 2.Docker can be installed via shell script obtained from get.docker.com and passed via pipe (|) to a shell(sh).
 
    ubuntu@ip-172-31-29-202:~$ curl -sSL https://get.docker.com/ | sh
+   
+   
+![installdocker](https://user-images.githubusercontent.com/35319815/34927081-97d099f8-f981-11e7-9b49-803061020b82.JPG)
        
 3.Add the ubuntu user to docker group. In general the command line docker client will require sudo access in order to issue commands to the docker. You can avoid using sudo by adding Ubuntu user to the docker group.
 
@@ -72,10 +88,15 @@ Docker Installation
 5.Reconnect to the system after reboot. You can verify the docker version by issuing below command.
 
    ubuntu@ip-172-31-29-202:~$ docker –v
+   
+![dockerversion](https://user-images.githubusercontent.com/35319815/34927080-97a9b19e-f981-11e7-9946-43663bda99da.JPG)
 
 
 Docker Image can be obtained by issuing the docker pull command as below.
 ubuntu@ip-172-31-29-202:~$ docker pull jupyter/datascience-notebook. 
+![pullingdockerimage](https://user-images.githubusercontent.com/35319815/34927082-97f26a88-f981-11e7-9571-633fad3591e9.JPG)
+
+
 The image pulled is present in the docker images cache.
 
 
@@ -84,11 +105,13 @@ The image pulled is present in the docker images cache.
 The below command shows all the docker images, their repository and tags and their size.
 
 ubuntu@ip-172-31-29-202:~$ docker images –a
+![dockerimage](https://user-images.githubusercontent.com/35319815/34927079-9790a8fc-f981-11e7-9274-403647e56c14.JPG)
 
 To run a Jupyter container, Docker will load the container from the image in your cache.
 In the below command the -p flag serves to link port 80 on the host machine, your EC2 instance, to the port 8888 on which the Jupyter Notebook server is running in the Docker container.
 
 ubuntu@ip-172-31-29-202:~$ docker run -v /home/ubuntu:/home/jovyan -p 80:8888 -d jupyter/datascience-notebook
+![containerid](https://user-images.githubusercontent.com/35319815/34927078-9777332c-f981-11e7-98eb-b48ccb249ec3.JPG)
 
 
 
