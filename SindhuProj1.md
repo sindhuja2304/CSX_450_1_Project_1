@@ -13,6 +13,7 @@ This process will generate a id_rsa (private key) and id_rsa.pub (public key),a 
 Using below command we can verify the contents of the generated public key.
 
 **$cat ~/.ssh /id_rsa.pub**
+
 Generated output is as below
 
 ![publickey](https://user-images.githubusercontent.com/35319815/34912729-8d1a2342-f8b6-11e7-9af0-5055d72705bd.JPG)
