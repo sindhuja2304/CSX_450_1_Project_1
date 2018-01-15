@@ -1,5 +1,6 @@
  
- **SYSTEM DESIGN**
+**SYSTEM DESIGN**
+
 ![system](https://user-images.githubusercontent.com/35319815/34928757-93c09280-f98d-11e7-9904-b57d01160ed1.JPG)
 
 **SSH KEYS**
@@ -10,6 +11,7 @@ The authentication keys named SSH keys are created using Keygen program. SSH-Key
 This process will generate a id_rsa (private key) and id_rsa.pub (public key),a key pair. With this public key we will be able to SSH into the system which we wish to access using the id_rsa file.
 
 Using below command we can verify the contents of the generated public key.
+
 **$cat ~/.ssh /id_rsa.pub**
 Generated output is as below
 
@@ -47,13 +49,16 @@ All the necessary configurations are made as part of launching new instance.
 4. In the fourth tab you can "Add Storage".Storage can be added upto 30 gb for free version.
 5. In the fifth tab you can "Add tags".This step can be ignored.
 6. In the sixth tab "Configure Security Group", is a Critical configuration. Choose the existing security group created to the instance that you are configuring. Verify that necessary ports are available in the Inbound rules at the bottom of tab.
+
 ![configuresecuritygroup](https://user-images.githubusercontent.com/35319815/34926867-5393e67e-f980-11e7-9e0a-ba796c348d30.JPG)
-Users might receive a warning from AWS saying “Improve your instances’ security. The security group created is now open to the world
+Users might receive a warning from AWS saying “Improve your instances’ security. The security group created is now open to the world.
 7.In the last tab Click "Review and Launch" button. 
 Then, "Select an existing key pair or create a new key pair" will be prompted.Select the existing key-pair  and accept the acknowledgement and then launch the instance.
+
 ![launchinstance](https://user-images.githubusercontent.com/35319815/34926874-5f28952a-f980-11e7-9e35-6992282f21d8.JPG)
 
 You will be notified of the running instance. Make sure instance is running by navigating to EC2 Dashboard Instances Pane. Make a note of the IP address of the instance at the bottom of tab.
+
 ![instance](https://user-images.githubusercontent.com/35319815/34928557-68fb5770-f98c-11e7-85c5-566125e3ce06.JPG)
 
 **Docker Installation**
@@ -85,6 +90,7 @@ You will be notified of the running instance. Make sure instance is running by n
 
 
 Docker Image can be obtained by issuing the docker pull command as below.
+
 ubuntu@ip-172-31-29-202:~$ docker pull jupyter/datascience-notebook. 
 ![pullingdockerimage](https://user-images.githubusercontent.com/35319815/34927082-97f26a88-f981-11e7-9571-633fad3591e9.JPG)
 
@@ -102,6 +108,7 @@ ubuntu@ip-172-31-29-202:~$ docker run -v /home/ubuntu:/home/jovyan -p 80:8888 -d
 
 
 You can run the below command to run the Jupyter Notebook server.
+
 ubuntu@ip-172-31-29-202:~$ docker exec 1ea2 jupyter notebook list
 
 ![url](https://user-images.githubusercontent.com/35319815/34927800-eedbe7de-f986-11e7-926c-5da63f402e27.JPG)
