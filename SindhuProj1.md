@@ -27,7 +27,7 @@ Choose Import to create a new key pair. Provide a name to the key pair. Copy the
 **Step3**: Create a New EC2 Instance Type,
 Go to EC2 Dashboard and click on Launch Instance Button.
 All the necessary configurations are made as part of launching new instance.
-First tab : Select AMI
+1. First tab : Select AMI
 Second tab : Choose Instance Type
 Third tab : Configure Instance. This step can be ignored
 Fourth tab :  Add Storage. For free version storage can be added upto 30 gb.
