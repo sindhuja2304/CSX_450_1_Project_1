@@ -13,6 +13,7 @@ Generated output is as below
 AWS is the cloud-based service providing platform. Amazon EC2 (Elastic Compute Cloud) is a web service which provides secure and capacity in cloud. Users can try the AWS free tier which includes 750 hours of free usage on their T2.microplatform.
 
 The process of configuring an AWS EC2 system consists of below steps
+
 **Step1**: Configure a key pair
 Go to EC2 Dashboard. Navigate Key Pairs Pane on EC2 Dashboard.
 Create a new key pair if you don’t have an existing key.
@@ -24,6 +25,7 @@ Choose Import to create a new key pair. Provide a name to the key pair. Copy the
 2.	Provide the security group name, description and VPC.
 3.	Configure the following Security Group rules for Inbound as below
 
+![securitygrp](https://user-images.githubusercontent.com/35319815/34926815-f95d7b84-f97f-11e7-859a-01ce80829a6d.JPG)
 
 **Step3**: Create a New EC2 Instance Type,
 Go to EC2 Dashboard and click on Launch Instance Button.
