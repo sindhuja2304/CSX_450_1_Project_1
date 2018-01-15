@@ -118,6 +118,9 @@ ubuntu@ip-172-31-29-202:~$ docker exec 1ea2 jupyter notebook list
 The output from the running Jupyter Notebook server provides you with a security authentication token. You can use to access the Notebook server through a browser.You can also do this using the URL by replacing the local host with Public IP address of the EC2 instance.
 ![jupytertoken](https://user-images.githubusercontent.com/35319815/34927818-114f5f44-f987-11e7-872d-c91304403c7c.JPG)
 
+![jupyter](https://user-images.githubusercontent.com/35319815/34929830-2344cd3a-f994-11e7-82fa-c3c03a23f1f1.JPG)
+
+
 **A detailed budget of the costs of running a Jupyter Data Science Notebook Server for three months using at least three different kinds of EC 2 instances is as below**
 
 General Purpose - Current Generation
