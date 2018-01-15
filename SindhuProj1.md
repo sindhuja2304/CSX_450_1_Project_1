@@ -49,20 +49,27 @@ Then, "Select an existing key pair or create a new key pair" will prompted. Here
 You will be notified of the running instance. Make sure instance is running by navigating to EC2 Dashboard Instances Pane. Make a note of the IP address of the instance at the bottom of tab.
 
 Docker Installation
+
 1.We can configure the New EC2 Instance for Using Docker.
+
    $ ssh ubuntu@ 35.167.20.17
+   
    
 
 2.Docker can be installed via shell script obtained from get.docker.com and passed via pipe (|) to a shell(sh).
+
    ubuntu@ip-172-31-29-202:~$ curl -sSL https://get.docker.com/ | sh
        
 3.Add the ubuntu user to docker group. In general the command line docker client will require sudo access in order to issue commands to the docker. You can avoid using sudo by adding Ubuntu user to the docker group.
+
    ubuntu@ip-172-31-29-202:~$ sudo usermod -aG docker ubuntu
 
 4.You can reboot the system for the changes to take effect.
+
    ubuntu@ip-172-31-29-202:~$ sudo reboot
 
 5.Reconnect to the system after reboot. You can verify the docker version by issuing below command.
+
    ubuntu@ip-172-31-29-202:~$ docker –v
 
 
