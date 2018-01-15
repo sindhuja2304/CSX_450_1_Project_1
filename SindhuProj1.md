@@ -27,12 +27,12 @@ Choose Import to create a new key pair. Provide a name to the key pair. Copy the
 **Step3**: Create a New EC2 Instance Type,
 Go to EC2 Dashboard and click on Launch Instance Button.
 All the necessary configurations are made as part of launching new instance.
-1. First tab : Select AMI
-Second tab : Choose Instance Type
-Third tab : Configure Instance. This step can be ignored
-Fourth tab :  Add Storage. For free version storage can be added upto 30 gb.
-Fifth tab : Add tags. This step can be ignored
-Sixth tab : "Configure Security Group", is a Critical configuration. Choose "Select an existing security group" since this was already created earlier and select the group name. Verify that necessary ports are available in the Inbound rules at the bottom of tab.
+1. In the First tab "choose AMI"(Amazon Machine Image).Choose the Ubuntu server that is free tier eligible.
+2. In the Second tab "Choose Instance Type"
+3. In the third tab you can "Configure Instance".This step can be ignored
+4. In the fourth tab you can "Add Storage".Storage can be added upto 30 gb for free version.
+5. In the fifth tab you can "Add tags".This step can be ignored.
+6. In the sixth tab "Configure Security Group", is a Critical configuration. Choose the existing security group created to the instance that you are configuring. Verify that necessary ports are available in the Inbound rules at the bottom of tab.
 Users might receive a warning from AWS saying “Improve your instances’ security. The security group created is now open to the world
 Last step, Click "Review and Launch" button. 
 Then, "Select an existing key pair or create a new key pair" will prompted. Here select key-pair created earlier and accept the acknowledgement then launch the instance.
