@@ -24,6 +24,7 @@ Choose Import to create a new key pair. Provide a name to the key pair. Copy the
 2.	Provide the security group name, description and VPC.
 3.	Configure the following Security Group rules for Inbound as below
 
+
 **Step3**: Create a New EC2 Instance Type,
 Go to EC2 Dashboard and click on Launch Instance Button.
 All the necessary configurations are made as part of launching new instance.
